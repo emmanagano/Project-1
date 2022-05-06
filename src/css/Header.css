@@ -1,0 +1,11 @@
+.header_title-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8fd89f;
+  padding: 2rem 0.5rem;
+  box-shadow: 5px 5px 5px lightgray;
+}
+.header_title-navbar h1 {
+  color: white;
+}

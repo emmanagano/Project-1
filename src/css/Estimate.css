@@ -1,0 +1,52 @@
+.estimate_main {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.estimate_main h1 {
+  color: #c48fd8;
+}
+.estimate_content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #c48fd8;
+  padding: 2rem;
+  border-radius: 20px;
+}
+.estimate_content h2 {
+  text-align: center;
+  color: white;
+}
+.estimate_contact-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.estimate_main input,
+.estimate_main select,
+.estimate_main button {
+  margin: 0.5rem;
+  padding: 1rem;
+  border: solid 1.5px #c48fd8;
+}
+.estimate_main input:focus {
+  font-size: 1.3rem;
+}
+.estimate_city-zip {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+}
+.estimate_sofa-carpet {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.estimate_appointment {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.estimate_main button:hover {
+  color: white;
+  background-color: gray;
+  font-size: 1.2rem;
+}
