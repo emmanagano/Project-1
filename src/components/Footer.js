@@ -20,7 +20,6 @@ const Footer = () => {
                     <br />
                     welcome to the family. 
                 </p>
-                
             </div>
             <div className="footer_quick-links">
                 <h2>Quick Links</h2>

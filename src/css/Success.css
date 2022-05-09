@@ -1,0 +1,12 @@
+.success {
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.success svg {
+  height: 4rem;
+  width: 4rem;
+  color: green;
+  margin: 1rem;
+}

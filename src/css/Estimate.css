@@ -25,7 +25,8 @@
 }
 .estimate_main input,
 .estimate_main select,
-.estimate_main button {
+.estimate_main button,
+.estimate_main label {
   margin: 0.5rem;
   padding: 1rem;
   border: solid 1.5px #c48fd8;
@@ -35,7 +36,7 @@
 }
 .estimate_city-zip {
   display: grid;
-  grid-template-columns: 1fr 0.5fr;
+  grid-template-columns: 1fr 0.5fr 0.5fr;
 }
 .estimate_sofa-carpet {
   display: grid;

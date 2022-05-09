@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./components/Home"
 import Prices from "./components/Prices";
+import Success from "./components/Success";
 
 import "./css/App.css";
 
@@ -32,6 +33,10 @@ const App = () => {
                 <Route
                     path="/estimate"
                     element={<Estimate />}
+                />
+                <Route
+                    path="/success"
+                    element={<Success />}
                 />
             </Routes>
             <Footer />
