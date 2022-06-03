@@ -1,0 +1,50 @@
+            <div>
+                <img src={require("../images/tile.jpg")}/>
+                <h2>Tile & Grout Cleaning</h2>
+            </div>
+            <div>
+                {/* <img src={require("../images/pet-stain.jpg")}/> */}
+                <h2>
+                    Pet Stain Removal
+                </h2>
+            </div>
+            <div>
+                {/* <img src={require("../images/odor.jpg")}/> */}
+                <h2>
+                    Odor Removal
+                </h2>
+            </div>
+            <div>
+                {/* <img src={require("../images/stain.jpg")}/> */}
+                <h2>
+                    Stain Protection 
+                </h2>
+            </div>
+            <div>
+                {/* <img src={require("../images/flood.jpg")}/> */}
+                <h2>Flood Extraction</h2>
+            </div>
+            <div>
+                {/* <img src={require("../images/rug.jpg")}/> */}
+                <h2>
+                    Rug Cleaning
+                </h2>
+            </div>
+            <div>
+                {/* <img src={require("../images/repair.jpg")}/> */}
+                <h2>
+                    Carpet Repair, Stretching & Removal
+                </h2>
+            </div>
+            <div>
+                {/* <img src={require("../images/car.jpg")}/> */}
+                <h2>
+                    Automobile Upholstery Cleaning
+                </h2>
+            </div>
+            <div>
+                {/* <img src={require("../images/upholstery.jpg")}/> */}
+                <h2>
+                    Home Upholstery Cleaning
+                </h2>
+            </div>

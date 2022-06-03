@@ -12,7 +12,7 @@ import "./css/App.css";
 const App = () => {
     return (
         <>
-            <Header />
+            {/* <Header /> */}
             <Routes>
                 <Route
                     path="/"
@@ -39,7 +39,7 @@ const App = () => {
                     element={<Success />}
                 />
             </Routes>
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

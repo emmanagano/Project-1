@@ -3,7 +3,12 @@ import Navbar from "./Navbar";
 import "../css/Header.css"
 import { useNavigate } from "react-router";
 
-const Header = () => {
+const Header = ({
+    togglePrices, 
+    setTogglePrices,
+    toggleContact,
+    setToggleContact
+}) => {
     return (
         <div className="header_main">
             <div>
@@ -11,7 +16,12 @@ const Header = () => {
                     <h1>
                         Cj's Cleaning
                     </h1>
-                    <Navbar/>
+                    <Navbar
+                        togglePrices={togglePrices}
+                        setTogglePrices={setTogglePrices}
+                        toggleContact={toggleContact}
+                        setToggleContact={setToggleContact}
+                    />
                 </div>
             </div>
         </div>

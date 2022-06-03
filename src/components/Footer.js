@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className="footer_main">
             <div>
-                <h2>Cj's Carpet Cleaning</h2>
+                <h2>To Our Customers</h2>
                 <p>
                     We would like to give special thank you
                     <br />

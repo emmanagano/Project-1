@@ -1,44 +1,36 @@
 import "../css/Prices.css";
+import {GrClose} from "react-icons/gr";
 
-const Prices = () => {
+const Prices = ({setTogglePrices}) => {
     return (
         <div className="prices_main">
+            <div className="close-btn-container">
+                <GrClose 
+                    onClick={() => {
+                        setTogglePrices(false)
+                    }}
+                />
+            </div>
             <div className="prices_content">
                 <div>
-                    <h3>3 ROOMS</h3>
-                </div>
-                <div>
+                    <h3>3 Rooms</h3>
                     <p>Hallway & Deodorizer</p>
+                    <h4>$79.95</h4>
                 </div>
                 <div>
-                    <h3>$79.95</h3>
-                </div>
-                <div>
-                    <h3>5 ROOMS</h3>
-                </div>
-                <div>
+                    <h3>5 Rooms</h3>
                     <p>Hallway & Deodorizer</p>
+                    <h4>$119.95</h4>
                 </div>
                 <div>
-                    <h3>$119.95</h3>
-                </div>
-                <div>
-                    <h3>TILE / GROUT</h3>
-                </div>
-                <div>
+                    <h3>Tile & Grout</h3>
                     <p>Cleaning & Sealing</p>
+                    <h4>$60 / sqft.</h4>
                 </div>
                 <div>
-                    <h3>$60 / sqft.</h3>
-                </div>
-                <div>
-                    <h3>SOFA / 2 ROOMS</h3>
-                </div>
-                <div>
+                    <h3>Sofa / 2 Rooms</h3>
                     <p>Free Deodorizer</p>
-                </div>
-                <div>
-                    <h3>$59.95</h3>
+                    <h4>$59.95</h4>
                 </div>
             </div>
         </div>

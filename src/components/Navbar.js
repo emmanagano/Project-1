@@ -2,21 +2,33 @@ import { Link } from "react-router-dom";
 
 import "../css/Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({
+    togglePrices, 
+    setTogglePrices,
+    toggleContact,
+    setToggleContact
+}) => {
     return (
         <div className="navbar_links">
-            <Link to="/">
-                HOME
-            </Link>
-            <Link to="/prices">
-                PRICES
-            </Link>
-            <Link to="/contact">
-                CONTACT
-            </Link>
-            <Link to="/estimate">
-                ESTIMATE
-            </Link>
+            <button
+                value={togglePrices}
+                onClick={() => {
+                    setTogglePrices(!togglePrices)
+                }}
+            > 
+                Prices
+            </button>
+            <button
+                value={toggleContact}
+                onClick={() => {
+                    setToggleContact(!toggleContact)
+                }}
+            >
+                Contact
+            </button>
+            <button>
+                Estimate
+            </button>
         </div>
     )
 }
