@@ -142,12 +142,42 @@
   margin: 1rem 0;
 }
 .home_services img {
-  width: 40vw;
-  height: 60vh;
+  width: 30vw;
+  height: 50vh;
 }
 .home_services h2 {
   width: 100%;
 }
 .home_title {
   font-style: italic;
+}
+.home_estimate-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.home_estimate-container button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  background-color: white;
+  border: solid 1px #0f52ba;
+}
+.home_estimate-container button:hover {
+  background-color: rgba(0, 0, 0, 0.692);
+  color: white;
+}
+.home_estimate-container button span {
+  color: #ec5800;
+  margin: 0 0.5rem;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+.home_estimate-container svg {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
 }

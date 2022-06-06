@@ -4,10 +4,10 @@ import "../css/Header.css"
 import { useNavigate } from "react-router";
 
 const Header = ({
-    togglePrices, 
-    setTogglePrices,
-    toggleContact,
-    setToggleContact
+    scrollToPrices,
+    scrollToContact,
+    scrollToEstimate,
+    setToggleArrow
 }) => {
     return (
         <div className="header_main">
@@ -17,10 +17,10 @@ const Header = ({
                         Cj's Cleaning
                     </h1>
                     <Navbar
-                        togglePrices={togglePrices}
-                        setTogglePrices={setTogglePrices}
-                        toggleContact={toggleContact}
-                        setToggleContact={setToggleContact}
+                        scrollToPrices={scrollToPrices}
+                        scrollToContact={scrollToContact}
+                        scrollToEstimate={scrollToEstimate}
+                        setToggleArrow={setToggleArrow}
                     />
                 </div>
             </div>

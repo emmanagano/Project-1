@@ -1,22 +1,30 @@
 .estimate_main {
-  padding: 3rem;
+  /* padding: 3rem; */
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #0f52ba;
+  /* flex-direction: column; */
+  /* align-items: center; */
 }
 .estimate_main h1 {
-  color: #c48fd8;
+  /* color: #c48fd8; */
+}
+.estimate_form-container {
+  width: 60vw;
 }
 .estimate_content {
+  margin: 4rem 0;
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  background-color: #c48fd8;
-  padding: 2rem;
-  border-radius: 20px;
+  width: 50%;
+  /* background-color: #c48fd8; */
+  /* border-radius: 20px; */
 }
 .estimate_content h2 {
-  text-align: center;
+  /* text-align: center; */
+  margin: 1rem;
   color: white;
 }
 .estimate_contact-info {
@@ -25,11 +33,11 @@
 }
 .estimate_main input,
 .estimate_main select,
-.estimate_main button,
 .estimate_main label {
   margin: 0.5rem;
   padding: 1rem;
-  border: solid 1.5px #c48fd8;
+  border: none;
+  /* border: solid 1px #0f52ba; */
 }
 .estimate_main input:focus {
   font-size: 1.3rem;
@@ -37,6 +45,14 @@
 .estimate_city-zip {
   display: grid;
   grid-template-columns: 1fr 0.5fr 0.5fr;
+}
+.estimate_next-button {
+  display: flex;
+  justify-content: flex-end;
+}
+.estimate_next-button svg {
+  width: 5vw;
+  height: 5vh;
 }
 .estimate_sofa-carpet {
   display: grid;
@@ -46,8 +62,57 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+.estimate_main button {
+  background-color: white;
+  /* color: white; */
+  margin: 1rem;
+  padding: 1rem;
+  border: none;
+}
 .estimate_main button:hover {
-  color: white;
-  background-color: gray;
-  font-size: 1.2rem;
+  /* color: white; */
+  background-color: white;
+}
+
+/* waves */
+.custom-shape-divider-top-1654409543 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1654409543 svg {
+  position: relative;
+  display: block;
+  width: calc(101% + 1.3px);
+  height: 47px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1654409543 .shape-fill {
+  fill: #ffffff;
+}
+.custom-shape-divider-bottom-1654409664 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1654409664 svg {
+  position: relative;
+  display: block;
+  width: calc(101% + 1.3px);
+  height: 47px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1654409664 .shape-fill {
+  fill: #ffffff;
 }

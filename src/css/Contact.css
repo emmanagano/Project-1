@@ -24,45 +24,6 @@
   /* align-items: center; */
   /* background-color: gray; */
 }
-.custom-shape-divider-top-1654296637 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1654296637 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 76px;
-}
-
-.custom-shape-divider-top-1654296637 .shape-fill {
-  fill: #0f52ba;
-}
-.custom-shape-divider-bottom-1654296744 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1654296744 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 76px;
-}
-
-.custom-shape-divider-bottom-1654296744 .shape-fill {
-  fill: #0f52ba;
-}
 
 .contact_main form {
   width: 55vw;
@@ -154,5 +115,5 @@
 }
 
 .contact-intro p span {
-  color: red;
+  color: #ec5800;
 }

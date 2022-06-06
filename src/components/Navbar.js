@@ -3,30 +3,33 @@ import { Link } from "react-router-dom";
 import "../css/Navbar.css";
 
 const Navbar = ({
-    togglePrices, 
-    setTogglePrices,
-    toggleContact,
-    setToggleContact
+    scrollToPrices,
+    scrollToContact,
+    scrollToEstimate,
+    setToggleArrow
 }) => {
     return (
         <div className="navbar_links">
             <button
-                value={togglePrices}
                 onClick={() => {
-                    setTogglePrices(!togglePrices)
+                    scrollToPrices.current.scrollIntoView()
                 }}
             > 
                 Prices
             </button>
             <button
-                value={toggleContact}
                 onClick={() => {
-                    setToggleContact(!toggleContact)
+                    scrollToContact.current.scrollIntoView()
                 }}
             >
                 Contact
             </button>
-            <button>
+            <button
+                onClick={() => {
+                    scrollToEstimate.current.scrollIntoView();
+                    setToggleArrow(true)
+                }}
+            >
                 Estimate
             </button>
         </div>

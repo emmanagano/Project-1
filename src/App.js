@@ -12,7 +12,6 @@ import "./css/App.css";
 const App = () => {
     return (
         <>
-            {/* <Header /> */}
             <Routes>
                 <Route
                     path="/"
@@ -27,10 +26,6 @@ const App = () => {
                     element={<Contact />}
                 />
                 <Route
-                    path="/contact"
-                    element={<Contact />}
-                />
-                <Route
                     path="/estimate"
                     element={<Estimate />}
                 />
@@ -39,7 +34,6 @@ const App = () => {
                     element={<Success />}
                 />
             </Routes>
-            {/* <Footer /> */}
         </>
     )
 }

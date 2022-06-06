@@ -1,43 +1,34 @@
 import "../css/Home.css";
 import "../images/pre-vacuum.jpg";
-import {AiOutlineArrowRight} from "react-icons/ai"
+import {AiOutlineArrowDown, AiOutlineArrowRight, AiOutlineDown, AiOutlineRight} from "react-icons/ai"
 import Header from "./Header";
 import {GiVacuumCleaner, GiSteam} from "react-icons/gi";
 import {FaSprayCan} from "react-icons/fa";
 import {BsWind} from "react-icons/bs";
 import Footer from "./Footer";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Prices from "./Prices";
 import Contact from "./Contact";
+import Estimate from "./Estimate";
 const Home = () => {
-    const [togglePrices, setTogglePrices] = useState(false);
-    const [toggleContact, setToggleContact] = useState(false);
+    const [toggleArrow, setToggleArrow] = useState(false);
+    const scrollToPrices = useRef();
+    const scrollToContact = useRef();
+    const scrollToEstimate = useRef();
     return (
-    <>
-        <div className="toggles-container">
-            {togglePrices &&
-                <Prices 
-                    setTogglePrices={setTogglePrices}
-                />
-            }
-        </div>
         <div 
             className="home_main"
-            style={{
-                display: togglePrices || toggleContact ? "none" : ""
-            }}
         >
-            
             <div className="home_welcome">
                 <img 
                     src={require("../images/pre-vacuum.jpg")}
                 />
                 <div className="home_owner-info">
                     <Header 
-                        togglePrices={togglePrices}
-                        setTogglePrices={setTogglePrices}
-                        toggleContact={toggleContact}
-                        setToggleContact={setToggleContact}
+                        scrollToPrices={scrollToPrices}
+                        scrollToContact={scrollToContact}
+                        scrollToEstimate={scrollToEstimate}
+                        setToggleArrow={setToggleArrow}
                     />
                     <span>
                         <p>Carlos J. Vega</p>
@@ -67,9 +58,9 @@ const Home = () => {
                 <div 
                     className="home_cleaning-steps"
                 >
-                    <div class="custom-shape-divider-top-1653775280">
+                    <div className="custom-shape-divider-top-1653775280">
                         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
                         </svg>
                     </div>
                     <span>
@@ -122,10 +113,35 @@ const Home = () => {
                     <img src={require("../images/pet-stain.jpg")}/>
                 </div>
             </div>
-            <Contact />
+            <Prices 
+                scrollToPrices={scrollToPrices}
+            />
+            <div 
+                className="home_estimate-container"
+                ref={scrollToEstimate}
+            >
+                <button
+                    onClick={() => {
+                        setToggleArrow(!toggleArrow)
+                    }}
+                >
+                    Would you like to fill out the 
+                    <span>
+                        Estimate Form 
+                    </span>
+                    instead?
+                    {
+                        toggleArrow ? <AiOutlineDown /> : <AiOutlineRight />
+                    }
+                </button>
+            </div>
+            {toggleArrow && <Estimate />}
+            <Contact 
+                scrollToContact={scrollToContact}
+            />
             <Footer />
         </div>
-    </>)
+    )
 }
 
 export default Home;
