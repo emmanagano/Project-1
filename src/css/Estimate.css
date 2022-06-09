@@ -1,14 +1,8 @@
 .estimate_main {
-  /* padding: 3rem; */
   display: flex;
   justify-content: center;
   position: relative;
   background-color: #0f52ba;
-  /* flex-direction: column; */
-  /* align-items: center; */
-}
-.estimate_main h1 {
-  /* color: #c48fd8; */
 }
 .estimate_form-container {
   width: 60vw;
@@ -17,14 +11,10 @@
   margin: 4rem 0;
   padding: 1rem;
   display: flex;
-  /* align-items: center; */
   flex-direction: column;
   width: 50%;
-  /* background-color: #c48fd8; */
-  /* border-radius: 20px; */
 }
 .estimate_content h2 {
-  /* text-align: center; */
   margin: 1rem;
   color: white;
 }
@@ -38,7 +28,6 @@
   margin: 0.5rem;
   padding: 1rem;
   border: none;
-  /* border: solid 1px #0f52ba; */
 }
 .estimate_main input:focus {
   font-size: 1.3rem;
@@ -65,13 +54,11 @@
 }
 .estimate_main button {
   background-color: white;
-  /* color: white; */
   margin: 1rem;
   padding: 1rem;
   border: none;
 }
 .estimate_main button:hover {
-  /* color: white; */
   background-color: white;
 }
 

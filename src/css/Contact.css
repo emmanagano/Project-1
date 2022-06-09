@@ -15,16 +15,6 @@
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
-  /* flex-direction: column; */
-  /* justify-content: space-between; */
-  /* position: fixed; */
-  /* top: 0;
-  left: 0; */
-  /* width: 100vw;
-  height: 100vh; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* background-color: gray; */
 }
 
 .contact_main form {
@@ -32,12 +22,10 @@
 }
 
 .contact_content {
-  /* width: 100vw; */
   padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* justify-content: space-around; */
   border-radius: 20px;
 }
 .contact_info {
@@ -72,7 +60,6 @@
   width: 100%;
   height: 40vh;
   padding: 1rem;
-  /* margin: 1rem; */
   border: solid #0f52ba 1px;
 }
 .contact_main textarea:focus {
@@ -97,10 +84,6 @@
   width: 100%;
 }
 .contact-intro {
-  /* width: 45vw; */
-  /* height: 100vh; */
-  /* padding: 3rem; */
-  /* background-color: #0f52ba; */
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -14,7 +14,7 @@ const Header = ({
             <div>
                 <div className="header_title-navbar">
                     <h1>
-                        Cj's Cleaning
+                        Cj's Carpet Cleaning
                     </h1>
                     <Navbar
                         scrollToPrices={scrollToPrices}

@@ -1,9 +1,4 @@
 .footer_main {
-  /* background-color: white; */
-  /* color: black; */
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-items: center; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
