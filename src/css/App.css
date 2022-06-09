@@ -5,3 +5,89 @@
   box-sizing: border-box;
   font-family: "Playfair Display";
 }
+
+@media (max-width: 900px) {
+  .home_owner-info span {
+    width: 30vw;
+    font-size: 5vw;
+  }
+  .home_estimate-container button {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+  }
+  .home_estimate-container button > span {
+    font-size: 3vw;
+  }
+  .header_title-navbar {
+    display: block;
+    margin: 0.5rem;
+  }
+  .home_services {
+    padding: 0;
+  }
+  .home_services > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home_services h3 {
+    font-size: 5vw;
+  }
+  .home_services img {
+    display: none;
+  }
+  .home_cleaning-steps {
+    display: flex;
+    flex-direction: column;
+  }
+  .home_guarantee {
+    display: none;
+  }
+  .prices_content {
+    display: flex;
+    flex-direction: column;
+  }
+  .prices_content > div {
+    width: 60vw;
+  }
+  .prices_content h4 {
+    font-size: 8vw;
+  }
+  .prices_content h3 {
+    font-size: 5vw;
+  }
+  .prices_content p {
+    font-size: 3vw;
+  }
+  .contact_info {
+    display: block;
+  }
+  .contact_info input {
+    width: 100%;
+  }
+  .contact_main > div,
+  .contact_main > form {
+    width: 100vw;
+  }
+  .estimate_main input {
+    width: 100%;
+  }
+  .estimate_content {
+    width: 90vw;
+  }
+  .estimate_city-zip {
+    display: block;
+  }
+  .footer_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_main > div {
+    width: 100vw;
+    border: none;
+  }
+}

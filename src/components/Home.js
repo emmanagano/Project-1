@@ -1,6 +1,6 @@
 import "../css/Home.css";
 import "../images/pre-vacuum.jpg";
-import {AiOutlineArrowDown, AiOutlineArrowRight, AiOutlineDown, AiOutlineRight} from "react-icons/ai"
+import {AiOutlineArrowRight, AiOutlineDown, AiOutlineRight} from "react-icons/ai"
 import Header from "./Header";
 import {GiVacuumCleaner, GiSteam} from "react-icons/gi";
 import {FaSprayCan} from "react-icons/fa";
@@ -19,11 +19,15 @@ const Home = () => {
         <div 
             className="home_main"
         >
-            <div className="home_welcome">
+            <div 
+                className="home_welcome"
+            >
                 <img 
                     src={require("../images/pre-vacuum.jpg")}
                 />
-                <div className="home_owner-info">
+                <div 
+                    className="home_owner-info"
+                >
                     <Header 
                         scrollToPrices={scrollToPrices}
                         scrollToContact={scrollToContact}
@@ -31,16 +35,28 @@ const Home = () => {
                         setToggleArrow={setToggleArrow}
                     />
                     <span>
-                        <p>Carlos J. Vega</p>
-                        <p>(386) - 627 - 0794</p>
-                        <p>Palm Coast, FL - 32164</p>
+                        <p>
+                            Carlos J. Vega
+                        </p>
+                        <p>
+                            (386) - 627 - 0794
+                        </p>
+                        <p>
+                            Palm Coast, FL - 32164
+                        </p>
                     </span>
-                    <div className="home_guarantee">
+                    <div 
+                        className="home_guarantee"
+                    >
                         <h2>
                             Truck Mounted Cleaning System
                         </h2>
-                        <h2>License and Insured</h2>
-                        <h2>Free Estimates</h2>
+                        <h2>
+                            License and Insured
+                        </h2>
+                        <h2>
+                            Free Estimates
+                        </h2>
                         <h2>
                             No Hidden Charges
                             Guaranteed
